@@ -1,0 +1,87 @@
+/* global style */
+.w1366{
+    width: 1366px;
+    min-width: 1366px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.head{
+    width: 100%;
+    height: 671px;
+    background: #f5f5f5
+}
+.head > div{
+    padding-top: 25px;
+    overflow: hidden;
+}
+.head > div .logo{
+    padding-left: 90px;
+    width: 52px;
+}
+.head > div .nav{
+    padding:0 42px 0 88px;
+}
+.nav a{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 14px
+}
+.head > div .banner-img{
+    padding-left: 165px
+}
+.head > div .banner-txt{
+    padding: 214px 0 0 124px
+}
+.head > div .banner-txt h1{
+    margin-bottom: 35px;
+    font-size: 30px;
+    color: #1d1d1d
+}
+.head > div .banner-txt p{
+    font-size: 18px;
+    color: #787878;
+}
+
+
+/* about us */
+.about{
+    height: 420px;
+    background: #fff;
+    text-align: center
+}
+
+.about > h1{
+    padding: 130px 0 35px 0;
+    font-size: 30px;
+    color: #191919
+}
+.about > p{
+    width: 855px;
+    margin: 0 auto 45px auto;
+    line-height: 24px;
+    font-size: 14px;
+    color: #787878
+}
+
+
+/* 专业技能 */
+.skill{
+    overflow: hidden;
+    background: #f2f2f2
+}
+
+.skill > div{
+    height: 570px;
+    overflow: hidden;
+    background: url('../images/skill-pic.jpg') top right no-repeat
+}
+
+.superiority{
+    padding: 92px 0 73px 0;
+    background: #fddb46;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 40px
+}
