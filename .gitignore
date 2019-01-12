@@ -1,0 +1,8 @@
+node_modules
+
+# Image metadata of mac, ms
+.DS_Store
+Thumbs.db
+
+# For some framework
+*.bat
