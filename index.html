@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./js/css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
+    <!-- head -->
     <div class="head">
         <div class="w1366">
 
@@ -51,12 +52,136 @@
     <!-- skill -->
     <div class="skill">
         <div class="w1366">
+            <div class="skill_list">
+                <div class="title">
+                    <h1>专业技能</h1>
+                    <span>Professional Skills</span>
+                </div>
+            </div>
+
+            <div class="proportion">
+                <div class="item"><span>工业设计</span>ID Design    95%</div>
+                <div class="item-line">
+                    <div style="width: 95%"></div>
+                </div>
+            </div>
+
+            <div class="proportion">
+                <div class="item"><span>UI / Web 设计</span>UI / UX / WEB DESIGN    90%</div>
+                <div class="item-line">
+                    <div style="width: 90%"></div>
+                </div>
+            </div>
+
+            <div class="proportion">
+                <div class="item"><span>平面包装设计</span>GRAPHIC / PACKGE DESIGN    65%</div>
+                <div class="item-line">
+                    <div style="width: 65%"></div>
+                </div>
+            </div>
 
         </div>
     </div>
 
+    <!-- superiority -->
     <div class="superiority">
         <img src="./images/superiority.png" alt="">
     </div>
+    <!-- server -->
+    <div class="service">
+
+        <div class="big-title w1166">
+            <h1>设计服务</h1>
+            <p>Our Service</p>
+        </div>
+
+        <!-- 1 -->
+        <div class="definition w1166">
+
+            <div class="title">
+                <h1>专业技能</h1>
+                <span>Professional Skills</span>
+            </div>
+            <div class="text">
+                <p>
+                工业设计师直接参与产品设计需求论证,根据年度设计策暗、
+                产品规划和目标人群定义,参与设计项目研究和产品设计定义,
+                深入了解设计需求使设计创新更具有实效性和针对性。
+                </p>
+                <p>
+                    Industrial designers directly participate in product design requirements argumentation, participate in design project research and product design definitions based on annual design policy, product planning and target population definition, and deep understanding of design requirements to make design innovation more effective and targeted.
+                </p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="product-design w1166">
+
+            <div class="design-content">
+
+                    <div class="title-wrap">
+                        <div class="title-right">
+                            <h1>外观设计</h1>
+                            <span>Product Design</span>
+                        </div>
+                    </div>
+
+                    <div class="design-text text">
+                        <p>
+                            多轮头脑风暴生成草图，内审后进行3D建模，做出PPT经内部审核后交付客户进行完美提案。经过整套流程呈现给客户的高颜值、硬体验、超预期的产品效果
+                        </p>
+                        <p>
+                            Multiple rounds of brainstorming generate sketches, 3D modeling after internal audit, and PPT are internally audited and delivered to customers for perfect proposal. High-value, hard experience, and unexpected product effects presented to customers through the entire process
+                        </p>
+                    </div>
+
+            </div>
+
+        </div>
+        <!-- 3 -->
+        <div class="definition process w1166">
+
+            <div class="title">
+                <h1>工艺预研</h1>
+                <span>Process Pre-study</span>
+            </div>
+            <div class="text">
+                <p>
+                    CMF是有关产品设计的颜色、材质与工艺基础认知。CMF牵涉到的问题并不是专业针对性强、运用范围特殊的，而是遍及我们生活中的方方面面。CMF设计是作用于设计对象的，它是联系、互动于这个对象与使用者之间的深层感性部分。它多是应用于产品设计中对色彩、材料、加工等设计对象的细节处理。
+                </p>
+                <p>
+                    CMF is a fundamental understanding of the color, material and process of product design. The problems involved in CMF are not professionally targeted, and the scope of application is special, but it covers all aspects of our lives. CMF design is applied to the design object, it is the deep emotional part of the connection and interaction between the object and the user. It is mostly applied to the details of color, material, processing and other design objects in product design.                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="swiper-container banner-footer w1366">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+<script src="./js/js/swiper.min.js"></script>
+<script>        
+    var mySwiper = new Swiper ('.swiper-container', {
+        grabCursor: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable :true,
+            // bulletClass : 'my-bullet',
+            // bulletActiveClass: 'my-bullet-active',
+            dynamicBullets: true,
+            dynamicMainBullets: 2
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    })        
+</script>
 </body>
 </html>

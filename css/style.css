@@ -4,7 +4,11 @@
     min-width: 1366px;
     margin: 0 auto;
 }
-
+.w1166{
+    width: 1160px;
+    min-width: 1160px;
+    margin: 0 auto;
+}
 
 /* header */
 .head{
@@ -84,4 +88,172 @@
     text-align: center;
     font-size: 0;
     margin-bottom: 40px
+}
+
+.skill_list{
+    margin-top: 133px
+}
+
+.title,.title-right{
+    height: 45px;
+    position: relative;
+    color: #171717;
+}
+.title h1{
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.title span, .title-right span{
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    top: 12px;
+    left: 150px;
+    z-index: 1
+}
+.title::after{
+    content: " ";
+    width: 246px;
+    height: 26px;
+    position: absolute;
+    top: 14px;
+    background: #fddb46;
+}
+
+.proportion{
+    width: 500px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.proportion .item{
+    height: 36px;
+    font-size: 14px;
+    color: #000
+}
+.proportion .item span{
+    width: 140px;
+    display: inline-block
+}
+.proportion .item-line{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #d8d8d8
+}
+.proportion .item-line > div{
+    height: 3px;
+    background: #fddb46
+}
+
+
+/* 设计服务 */
+.service{
+    /*  */
+    
+}
+
+.big-title{
+    margin: 65px auto 65px auto;
+    text-align: center;
+    color: #191919
+}
+.big-title h1{
+    font-size: 30px;
+    margin-bottom: 15px
+}
+.big-title p{
+    font-size: 24px
+}
+.definition{
+    background: url("../images/definition.jpg") right 75px no-repeat;
+}
+
+.definition .text{
+    width: 512px;
+    margin: 126px 0 0 0;
+    font-size: 14px;
+    color: #787878
+}
+.definition .text p, .design-content .design-text p{
+    margin-bottom: 35px;
+    line-height: 26px
+}
+
+
+/* product design */
+
+.product-design{
+    margin-top: 200px;
+    margin-bottom: 220px;
+    overflow: hidden;
+    background: url('../images/design.jpg') no-repeat
+}
+
+.design-content{
+    width: 515px;
+    float: right;
+}
+
+.design-content .design-text{
+    padding-top: 60px
+}
+.design-content .design-text p{
+    text-align: right
+}
+.title-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.title-right::after{
+    content: " ";
+    width: 158px;
+    height: 26px;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    background: #fddb46;
+}
+.title-right h1{
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.title-right span{
+    left: 245px
+}
+
+.process{
+    background: url("../images/process.png") right 70px no-repeat;
+    margin-bottom: 120px
+}
+
+.swiper-container {
+    height: 500px;
+}
+.banner-footer{
+    margin-bottom: 100px
+}
+.my-bullet{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+    border-radius: 100%;
+    background: #000;
+    opacity: .3
+}
+.my-bullet-active{
+    width: 12px;
+    height: 12px;
+    background: #000;
+    opacity: 1;
+}
+.swiper-pagination{
+    padding-bottom: 60px
 }
