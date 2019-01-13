@@ -1,6 +1,6 @@
 ;(function($){
 
-    new Swiper ('.swiper-container', {
+    new Swiper ('.banner-show', {
         grabCursor: true,
         pagination: {
             el: '.swiper-pagination',
@@ -8,7 +8,10 @@
             dynamicBullets: true,
             dynamicMainBullets: 2
         }
-    })    
+    }) 
+    new Swiper ('.case', {
+        // grabCursor: true,
+    }) 
 
     $(window).bind('scroll',function(){
         var scrollTop = parseInt($(window).scrollTop());

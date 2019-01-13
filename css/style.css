@@ -109,7 +109,6 @@
     background: #fddb46;
     text-align: center;
     font-size: 0;
-    margin-bottom: 40px
 }
 
 .skill_list{
@@ -171,6 +170,29 @@
     background: #fddb46
 }
 
+/* case show */
+.case{
+    width: 100%;
+    min-width: 1366px;
+    font-size: 0;
+}
+.case li{
+    cursor: pointer;
+    transition: all .3s;
+    opacity: 1;
+}
+.case li:hover > img{
+    opacity: .8;
+}
+.case .pic-wrap{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+}
+
+.case .pic-wrap img{
+    width: 100%
+}
 
 /* 设计服务 */
 .service{

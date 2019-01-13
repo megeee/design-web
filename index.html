@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./js/css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/zoom.css">
 </head>
 <body>
     <!-- head -->
@@ -86,6 +87,50 @@
     <div class="superiority min-width">
         <img src="./images/superiority.png" alt="">
     </div>
+
+    <!-- 作品展示 -->
+    <div class="swiper-container case">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="zoom">
+                <ul>
+                    <li class="pic-wrap" data-bigimages="02.jpg,03.jpg" data-direct="1">
+                        <img src="./images/case/1.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/2.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/3.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/4.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/5.png" alt="">
+                    </li>
+                </ul>
+                <ul>
+                    <li class="pic-wrap">
+                        <img src="./images/case/6.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/7.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/8.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/9.png" alt="">
+                    </li>
+                    <li class="pic-wrap">
+                        <img src="./images/case/10.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <!-- server -->
     <div class="service">
 
@@ -154,7 +199,8 @@
         
     </div>
 
-    <div class="swiper-container w1366">
+    <!-- 横幅 -->
+    <div class="swiper-container banner-show w1366">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
             <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
@@ -163,9 +209,10 @@
         <div class="swiper-pagination"></div>
     </div>
 
+    <!--  合作伙伴 -->
     <div class="customer w1366">
         <ul>
-            <li><img src="./images/logs/logo_01.jpg" alt=""></li>
+            <li><a href="./images/logs/logo_02.jpg"><img src="./images/logs/logo_01.jpg" alt=""></a></li>
             <li><img src="./images/logs/logo_02.jpg" alt=""></li>
             <li><img src="./images/logs/logo_03.jpg" alt=""></li>
             <li><img src="./images/logs/logo_04.jpg" alt=""></li>
@@ -175,6 +222,8 @@
         </ul>
     </div>
     
+    <!-- contact -->
+
     <div class="contact">
         <h1>联系我们</h1>
         <p>Let us know what you're looking for in an agency. We'll take a look and see 
@@ -184,6 +233,7 @@
         <div class="contact-text">邮箱：yangqia01@126.com(商务）</div>
     </div>
 
+    <!-- footer -->
     <div class="footer min-width">
         <div class="footer-content w1166">
             <div class="copyright fl">
@@ -220,8 +270,26 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="zoom">
+
+        <div class="zoom-mask"></div>
+
+        <div class="zoom-show-wrap">
+            <div class="zoom-close">X</div>
+            <img src="./images/case/1.png" alt="">
+            <div class="zoom-handel zoom-prev"></div>
+            <div class="zoom-handel zoom-next"></div>
+        </div>
+
+    </div>
+
+
 <script src="./js/jquery.min.js"></script>
 <script src="./js/js/swiper.min.js"></script>
+<script src="./js/zoom.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
