@@ -20,6 +20,9 @@
 .head .nav-wrap{
     padding-top: 25px;
     overflow: hidden;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
     transition: all .5s
 }
 .head .nav-wrap .logo{
@@ -178,7 +181,10 @@
 }
 .case li{
     cursor: pointer;
-    transition: all .3s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
     opacity: 1;
 }
 .case li:hover > img{

@@ -1,6 +1,10 @@
+/** 
+ * 图片浏览f
+ * V 1.1
+ * By: Jeff Guo
+ */
+
 ;(function($){
-
-
 
     function Zoom(){
 
@@ -9,7 +13,7 @@
         this.imgWrap = $(".zoom-show-wrap > img");
         this.imagesDirect = "./images/case/";
         this.direct = "";
-        this.now = 1;
+        this.now = 0;
         this.onload()
 
     }
@@ -20,6 +24,7 @@
 
         //添加事件
         $("#zoom > ul > li").click(function(){
+            _this.now = 0;
             _this.images = $(this).attr("data-bigimages").split(",");
             _this.direct = $(this).attr("data-direct");
                 // console.log(images)
@@ -35,29 +40,29 @@
             _this.imgWrap.attr('src', ""); 
         })
 
+        //上一张
         $(".zoom-prev").click(function(){
             if(_this.now > 0){
-                var index = _this.now--;
-                _this.changeImg(_this.direct, index)
+                _this.now--;
+                _this.changeImg(_this.direct)
             }
         })
 
+        //下一张
         $(".zoom-next").click(function(){
-            console.log(_this.now++)
-            if(_this.now < _this.images.length){
-                var index = _this.now++
-                _this.changeImg(_this.direct, index)
+            if(_this.now < _this.images.length-1) {
+                _this.now++
+                _this.changeImg(_this.direct);
             }
         })
     }
 
-    Zoom.prototype.changeImg = function(direct, index){
-
-        console.log(index)
-
+    /**
+     * 切换图片
+     */
+    Zoom.prototype.changeImg = function(direct){
         if(direct){
-            var imgUrl = this.imagesDirect + direct + "/" + this.images[index]-1;
-            console.log(imgUrl)
+            var imgUrl = this.imagesDirect + direct + "/" + this.images[this.now];
             this.imgWrap.attr('src', imgUrl); 
         }
     }

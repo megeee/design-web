@@ -18,6 +18,10 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
     transform: translate(-50%,-50%);
     border-radius: 8px;
     background: #fff;
@@ -25,7 +29,7 @@
 }
 .zoom .zoom-show-wrap > img{
     max-width: 1000px;
-    max-height: 700px
+    max-height: 700px;
 }
 .zoom .zoom-show-wrap .zoom-close{
     width: 30px;
@@ -36,8 +40,11 @@
     top: -15px;
     background: #fff;
     border-radius: 200%;
-    transition: all .3s;
-    box-shadow: 0 2px 4px 1px rgba(0,0,0,.5);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,.5);
     text-align: center;
     font-size: 16px;
     cursor: pointer;
