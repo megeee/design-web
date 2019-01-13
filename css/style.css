@@ -17,15 +17,16 @@
     height: 671px;
     background: #f5f5f5
 }
-.head > div{
+.head .nav-wrap{
     padding-top: 25px;
     overflow: hidden;
+    transition: all .5s
 }
-.head > div .logo{
+.head .nav-wrap .logo{
     padding-left: 90px;
     width: 52px;
 }
-.head > div .nav{
+.head .nav-wrap .nav{
     padding:0 42px 0 88px;
 }
 .nav a{
@@ -33,20 +34,40 @@
     margin: 0 20px;
     font-size: 14px
 }
-.head > div .banner-img{
+.head .banner .banner-img{
     padding-left: 165px
 }
-.head > div .banner-txt{
+.head .banner .banner-txt{
     padding: 214px 0 0 124px
 }
-.head > div .banner-txt h1{
+.head .banner .banner-txt h1{
     margin-bottom: 35px;
     font-size: 30px;
     color: #1d1d1d
 }
-.head > div .banner-txt p{
+.head .banner .banner-txt p{
     font-size: 18px;
     color: #787878;
+}
+.head .banner.active{
+    padding-top: 80px;
+}
+.head .nav-wrap.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgba(254,216,60,.8);
+    box-shadow: 2px 0 5px 1px rgba(0,0,0,.2);
+    z-index: 999;
+}
+.head .nav-wrap.active .logo{
+    padding-top: -10px
+}
+.head .nav-wrap.active .nav{
+    padding-top: 14px
 }
 
 
@@ -279,6 +300,7 @@
 .contact{
     width: 100%;
     height: 568px;
+    min-width: 1366px;
     background: #f5f5f5;
     text-align: center
 }
@@ -304,6 +326,35 @@
     height: 285px;
     min-width: 1366px;
     box-sizing: border-box;
-    padding-top: 100px;
+    padding: 100px 0 0 100px;
     background: #141414;
+    font-size: 14px;
+}
+.footer .footer-content{
+    background: yellow
+}
+.footer .copyright{
+    width: 470px;
+    color: #fff;
+}
+.footer .copyright-text{
+    margin-top: 32px;
+    color: #bcbcbc
+}
+
+.footer .footer-contact{
+    width: 300px;
+}
+
+.footer-links {
+    width: 108px;
+}
+
+.footer-links a{
+    display: block;
+    margin-bottom: 14px;
+    color: #bcbcbc
+}
+.footer-links a:hover{
+    color: #fed93a
 }

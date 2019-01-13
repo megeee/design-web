@@ -12,30 +12,29 @@
 <body>
     <!-- head -->
     <div class="head min-width">
-        <div class="w1366">
-
+        <div class="nav-wrap w1366">
             <div class="logo fl">
                 <img src="./images/logo.jpg" alt="">
             </div>
 
             <div class="nav fr">                           
-                <a href="">首页</a>
-                <a href="">关于我们</a>
-                <a href="">案例</a>
-                <a href="">工作流程</a>
-                <a href="">服务</a>
-                <a href="">联系我们</a>
+                <a href="javascript:void(0)" data-router="head">首页</a>
+                <a href="javascript:void(0)" data-router="about">关于我们</a>
+                <a href="javascript:void(0)" data-router="skill">案例</a>
+                <a href="javascript:void(0)" data-router="superiority">工作流程</a>
+                <a href="javascript:void(0)" data-router="service">服务</a>
+                <a href="javascript:void(0)" data-router="contact">联系我们</a>
             </div>
-
         </div>
 
-        <div class="w1366">
+        <div class="w1366 banner">
             <img src="./images/banner-pic.jpg" alt="" class="banner-img fl">
             <div class="banner-txt fl">
                 <h1>工业设计推动企业创新</h1>
                 <p>从线条、倒角、接缝等一系列细节开始，探寻并总结品牌的产品特性</p>
             </div>
         </div>
+
     </div>
     
     <!-- about -->
@@ -186,27 +185,43 @@
     </div>
 
     <div class="footer min-width">
+        <div class="footer-content w1166">
+            <div class="copyright fl">
+                <p>RounDot design co. Ltd</p>
+                <p class="copyright-text">© 2019 Piroll. All rights reserved.
+                    <br>Designed by robirurk.       
+                </p>
+            </div>
 
+            <div class="footer-contact fl">
+                yangqia01@126.com<br>
+                159 9476 9774
+            </div>
+
+            <div class="footer-links fl">
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Carreer</a>
+            </div>
+
+            <div class="footer-links fl">
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Carreer</a>
+            </div>
+
+            <div class="footer-links fr">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Dribbble</a>
+            </div>
+        </div>
     </div>
-
+<script src="./js/jquery.min.js"></script>
 <script src="./js/js/swiper.min.js"></script>
-<script>        
-    var mySwiper = new Swiper ('.swiper-container', {
-        grabCursor: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable :true,
-            // bulletClass : 'my-bullet',
-            // bulletActiveClass: 'my-bullet-active',
-            dynamicBullets: true,
-            dynamicMainBullets: 2
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-    })        
-</script>
+<script src="./js/main.js"></script>
 </body>
 </html>
