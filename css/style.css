@@ -115,7 +115,7 @@
 }
 
 .skill_list{
-    margin-top: 133px
+    margin-top: 133px;    
 }
 
 .title,.title-right{
@@ -209,7 +209,8 @@
 }
 
 .big-title{
-    margin: 65px auto 65px auto;
+    margin: 0 auto 65px auto;
+    padding-top: 65px;
     text-align: center;
     color: #191919
 }
@@ -385,7 +386,7 @@
 .footer-links a{
     display: block;
     margin-bottom: 14px;
-    color: #bcbcbc
+    color: #666
 }
 .footer-links a:hover{
     color: #fed93a

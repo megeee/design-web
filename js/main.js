@@ -25,7 +25,7 @@
         var router =  $(this).attr("data-router"),
             targer = $("." + router).offset().top;
         $("html,body").animate({
-            scrollTop: targer + "px"
+            scrollTop: targer - 60 + "px"
         }, 500);
     })
 
