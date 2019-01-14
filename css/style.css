@@ -176,8 +176,10 @@
 /* case show */
 .case{
     width: 100%;
+    max-width: 1920px;
     min-width: 1366px;
     font-size: 0;
+    overflow: hidden;
 }
 .case li{
     cursor: pointer;
@@ -283,7 +285,7 @@
 }
 
 .swiper-container {
-    height: 500px;
+    overflow: hidden;
 }
 .my-bullet{
     width: 8px;
@@ -322,7 +324,9 @@
     background: blue;
     margin: 0 20px
 }
-
+.customer ul li:hover{
+    opacity: .8;
+}
 
 /* contact */
 .contact{
