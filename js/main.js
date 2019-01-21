@@ -10,14 +10,30 @@
         }
     }) 
     new Swiper ('.case', {
-        // grabCursor: true,
+
     }) 
+
+    new Swiper ('.banner', {
+        grabCursor: true,
+        autoplay: true,
+        loop : true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable :true,
+            dynamicBullets: true,
+            dynamicMainBullets: 2
+        },
+        navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+        },
+    })
 
     $(window).bind('scroll',function(){
         var scrollTop = parseInt($(window).scrollTop());
         //改变头部
         scrollTop >= 80 ? 
-        $(".nav-wrap,.banner").addClass('active') : $(".nav-wrap,.banner").removeClass('active');
+        $(".nav-wrap").addClass('active') : $(".nav-wrap").removeClass('active');
     })
 
     //导航

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RounDot design co. Ltd</title>
     <link rel="stylesheet" href="./css/reset.css">
@@ -27,12 +26,27 @@
             </div>
         </div>
 
-        <div class="w1366 banner">
-            <img src="./images/banner-pic.jpg" alt="" class="banner-img fl">
-            <div class="banner-txt fl">
-                <h1>工业设计推动企业创新</h1>
-                <p>从线条、倒角、接缝等一系列细节开始，探寻并总结品牌的产品特性</p>
+        <div class="swiper-container banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="w1366" style="padding-top: 100px">
+                        <img src="./images/banner-pic.jpg" alt="" class="banner-img fl">
+                        <div class="banner-txt fl">
+                            <h1>工业设计推动企业创新</h1>
+                            <p>从线条、倒角、接缝等一系列细节开始，探寻并总结品牌的产品特性</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(./images/banner-01.jpg) no-repeat center top">
+                   
+                </div>
+                <div class="swiper-slide"  style="background: url(./images/banner-02.jpg) no-repeat center top">
+                   
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="banner-btn button-next"></div>
+            <div class="banner-btn button-prev"></div>
         </div>
 
     </div>
@@ -200,17 +214,17 @@
     <!-- 横幅 -->
     <div class="swiper-container banner-show w1366">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
+            <div class="swiper-slide banner-show-wrap"><img src="./images/banner1.jpg" alt=""></div>
+            <div class="swiper-slide banner-show-wrap"><img src="./images/banner2.jpg" alt=""></div>
+            <div class="swiper-slide banner-show-wrap"><img src="./images/banner3.jpg" alt=""></div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination banner-show-pagination"></div>
     </div>
 
     <!--  合作伙伴 -->
     <div class="customer w1366">
         <ul>
-            <li><a href="./images/logs/logo_02.jpg"><img src="./images/logs/logo_01.jpg" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img src="./images/logs/logo_01.jpg" alt=""></a></li>
             <li><img src="./images/logs/logo_02.jpg" alt=""></li>
             <li><img src="./images/logs/logo_03.jpg" alt=""></li>
             <li><img src="./images/logs/logo_04.jpg" alt=""></li>
@@ -254,10 +268,10 @@
             </div>
 
             <div class="footer-links fl">
-                <a>Projects</a>
-                <a>About</a>
-                <a>Services</a>
-                <a>Carreer</a>
+                <a>News</a>
+                <a>Events</a>
+                <a>Contact</a>
+                <a>Legals</a>
             </div>
 
             <div class="footer-links fr">
