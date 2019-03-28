@@ -32,7 +32,17 @@
 }
 .head .nav-wrap .logo{
     padding-left: 90px;
-    width: 52px;
+    width: 365px;
+}
+.head .nav-wrap .logo img,.head .nav-wrap .logo span{
+    display: inline-block;
+    vertical-align: middle;    
+}
+.head .nav-wrap .logo span{
+    font-size: 25px;
+    color: #000;
+    margin-left: 6px;
+    letter-spacing: 3px
 }
 .head .nav-wrap .nav{
     padding:0 42px 0 88px;
