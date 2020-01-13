@@ -420,6 +420,16 @@
     background: #141414;
     font-size: 14px;
 }
+.footer .icp{
+    
+    margin-top: 30px;
+}
+.footer .icp > a{
+    color: #bcbcbc;
+}
+.footer .icp > a:hover{
+    color: #fddb46;
+}
 .footer .footer-content{
     background: yellow
 }
